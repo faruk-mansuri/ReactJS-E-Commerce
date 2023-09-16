@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { CheckoutForm, SectionTitle, CartTotals } from '../components';
+import { CheckoutForm, SectionTitle, CartTotals } from '../Components';
 import { Link, redirect } from 'react-router-dom';
 import { toast } from 'react-toastify';
 

@@ -5,7 +5,7 @@ import {
   OrdersList,
   ComplexPaginationContainer,
   SectionTitle,
-} from '../components';
+} from '../Components';
 
 const ordersQuery = (params, user) => {
   return {
