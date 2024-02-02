@@ -35,7 +35,8 @@ export const loader = (store, queryClient) => {
       return { orders: response.data.data, meta: response.data.meta };
     } catch (error) {
       console.log(error);
-      error?.response?.data?.error?.message || 'there was an error';
+      const errorMessage =
+        error?.response?.data?.error?.message || 'there was an error';
       toast.error(errorMessage);
 
       if (error?.response?.status === 401 || error?.response?.status === 403) {
